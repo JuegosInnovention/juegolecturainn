@@ -49,13 +49,32 @@
       display: inline-block;
       border-radius: 30px;
     }
+    .boton-salir {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #e53935; /* rojo fuerte */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-salir:hover {
+      background-color: #c62828;
+    }
   </style>
 </head>
 <body>
   <div class="rainbow-border">
     <h1>🌟 ¡Aprendamos de forma Divertida! 🌟</h1>
   </div>
-
+  
+  <a href="https://innovention.us/" class="boton-salir">Salir</a>
   <div class="btn-container">
     <a href="./escritura/escritura.html" class="btn">Escritura</a>
     <a href="./lectura/Configuracion.html" class="btn">Lectura</a>
