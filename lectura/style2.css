@@ -65,3 +65,28 @@ h1 {
   margin: auto;
   box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
 }
+.boton-salir {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #e53935; /* rojo fuerte */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.boton-salir:hover {
+  background-color: #c62828;
+}
+.logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px; /* Ajusta el tamaño si lo necesitas */
+  height: auto;
+}
