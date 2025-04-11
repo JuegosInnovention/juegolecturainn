@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style2.css">
 </head>
 <body>
+  <button class="boton-salir" onclick="window.history.back()">Salir</button>
   <h1>APRENDAMOS A LEER</h1>
   <form id="config-form">
     <label for="tiempo">Tiempo entre letras e imagen:</label>
@@ -27,7 +28,7 @@
 
     <button type="submit">Iniciar Juego</button>
   </form>
-
+  <img src="./imagenes/image.jpg" alt="Logo" class="logo">
   <script>
     document.getElementById('config-form').addEventListener('submit', function(e) {
       e.preventDefault();
