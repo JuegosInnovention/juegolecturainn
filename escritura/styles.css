@@ -395,3 +395,10 @@ body {
 .boton-salir:hover {
     background-color: #c62828;
 }
+.logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px; /* Ajusta el tamaño si lo necesitas */
+  height: auto;
+}
