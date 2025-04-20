@@ -1,55 +1,67 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Juego de Letras</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-</head>
-<body>
-  <button class="boton-salir" onclick="window.history.back()">Salir</button>
-  <button id="btnRegresar" onclick="window.location.href='index.html'">⬅ Regresar</button>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Juego de Letras</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button class="boton-salir" onclick="window.history.back()">Salir</button>
+    <button id="btnRegresar" onclick="window.location.href='index.html'">⬅ Regresar</button>
 
-  <div class="juego-layout">
-    <div id="consonantes" class="letras-contenedor"></div>
+    <div class="juego-layout">
+      <div id="consonantes" class="letras-contenedor"></div>
 
-    <div class="centro">
-      <div id="contenedor-imagen">
-        <img id="imagen-palabra" src="" alt="Imagen de la palabra" />
-        <div id="contenedor-letras-escritas"></div>
+      <div class="centro">
+        <div id="contenedor-imagen">
+          <img id="imagen-palabra" src="" alt="Imagen de la palabra" />
+          <div id="contenedor-letras-escritas"></div>
+        </div>
+        <div class="botones-centro">
+          <button id="btnAnterior" class="btn-juego">Anterior</button>
+          <button id="btnSiguiente" class="btn-juego">Siguiente</button>
+          <button id="btnComprobar" class="btn-juego">Comprobar</button>
+
+        </div>
       </div>
-      <div class="botones-centro">
-        <button id="btnAnterior" class="btn-juego">Anterior</button>
-        <button id="btnSiguiente" class="btn-juego">Siguiente</button>
-        <button id="btnComprobar" class="btn-juego">Comprobar</button>
-
-      </div>
-    </div>
-    
       
+        
 
-    <div id="vocales" class="letras-columna"></div>
-  </div>
-  <img src="./imagenes/image.jpg" alt="Logo" class="logo">
+      <div id="vocales" class="letras-columna"></div>
+    </div>
+    <img src="./imagenes/image.jpg" alt="Logo" class="logo">
 
-  <div id="modalCorrecto" class="modal">
-    <div class="modal-contenido">
-      🎉🎊 ¡Muy bien! 🎊🎉
+    <!-- Modal para palabra correcta -->
+<div id="modalCorrecto" class="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;z-index:9999;">
+  <div style="text-align:center;">
+    <div style="background:rgb(9, 247, 29);padding:2rem;border-radius:10px;font-size:2rem;">
+      🎉🎉🥳👏🥳👏🥳👏🎉🎉</div>
+    <div style="width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    ">
     </div>
   </div>
-  
-  <div id="modalIncorrecto" class="modal">
-    <div class="modal-contenido">
-      ❌😢 Inténtalo de nuevo 😢❌
-    </div>
+</div>
+
+<!-- Modal para palabra incorrecta -->
+<div id="modalIncorrecto" class="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);justify-content:center;align-items:center;z-index:9999;">
+  <div style="background:rgb(247, 9, 9);padding:2rem;border-radius:10px;font-size:2rem;">
+    ❌ ❌ ❌ ❌ ❌ ❌
   </div>
-  
+</div>
 
-<!-- Confetti (opcional si quieres usarlo luego) -->
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+    
 
+  <!-- Confetti (opcional si quieres usarlo luego) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
 
